@@ -51,8 +51,9 @@
 footer{
     position: fixed;
     text-align: center;
-    background-color: #010101;
-    color: #f5f5de;
+    color: #e4d1d1;
+    background: linear-gradient(#0d0804, #030003);
+    opacity: 80%;
     height: 59px;
     bottom: 0;
     padding: 20px;
@@ -81,7 +82,7 @@ footer:hover{
 .cards-control{
     position: absolute;
     top: 70%;
-    left: 50%;
+    left: 53%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
     background-color: none;
@@ -91,27 +92,31 @@ footer:hover{
 .card{
     margin-top: 20px;
     margin-left: 15px;
+    margin-right: 35px;
     width: 300px;
     height: 340x;
     border-radius: 20%;
     display: inline-block;
     text-align: center;
-    background: radial-gradient(rgb(255, 241, 117), rgb(255, 255, 255));
-    backface-visibility: 70%;
+    background-color: rgb(19, 13, 13);
+    background-repeat: no-repeat;
+    backface-visibility: 80%;
 
 }
 
 .card a {
-    font-family: 'Italianno', cursive;;
+    font-family: 'Italianno', cursive;
     font-size: 30px;
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 
 }
 
 .card img{
-    width: 290px;
-    height: 280px;
+    transform: translate3d(-4px, 7px, 6px);
+    justify-content: center;
+    width: 240px;
+    height: 220px;
     border-radius: 20%;
 
 }
@@ -127,4 +132,22 @@ footer:hover{
 
 .card a:hover{
     color: #F2A340;
+}
+
+/*Divs Info Page*/
+
+#title-container{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    vertical-align: middle;
+   
+}
+
+#title-container h1{
+    font-size: 60px;
+    color: black;
+    font-family: 'Akronim', cursive;
 }

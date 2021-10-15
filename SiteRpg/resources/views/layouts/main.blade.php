@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>@yield('title')</title>
 
+    <!--Icone da página -->
+    <link rel="shortcut icon" href="/img/Icon-rpg.png">
+
     <!--CSS Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- Fonte Awesome -->
@@ -15,8 +18,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Akronim&family=Italianno&display=swap" rel="stylesheet">
+
     <!--Javascript da aplicação-->
-  
     <script type="text/javascript" src="/js/consulta_end.js"></script>
     <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -43,10 +46,10 @@
                         <a href="/" class="nav-link"><ion-icon name="person-add"></ion-icon>Cadastrar</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link"><ion-icon name="book"></ion-icon>Instruções</a>
+                        <a href="/info" class="nav-link"><ion-icon name="book"></ion-icon>Instruções</a>
                     </li>
                     <li class="nav-item">
-                        <a href="/" class="nav-link"><ion-icon name="finger-print"></ion-icon>Minha Ficha</a>
+                        <a href="/ficha" class="nav-link"><ion-icon name="finger-print"></ion-icon>Minha Ficha</a>
                     </li>
                 </ul>
             </div>

@@ -21,14 +21,18 @@
 
 * {
     font-family: 'Bona Nova', serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
 }
 
 #index-title{
     font-size: 100px;
     color: black;
     font-family: 'Akronim', cursive;
-    position: absolute;
-    top: 40%;
+    position: relative;
+    top: 300px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -37,9 +41,9 @@
 #index-sub{
     font-family: 'Italianno', cursive;;
     font-size: 45px;
-    position: absolute;
+    position: relative;
     color: #2c2c2c;
-    top: 50%;
+    top: 280px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
@@ -60,10 +64,6 @@ footer{
     width: 100%;
 }
 
-footer p{
-    margin-bottom: 0;
-}
-
 footer:hover{
     color: #F2A340;
 }
@@ -72,50 +72,79 @@ footer:hover{
 .linha-index{
     position: absolute;
     top: 45%;
+    width: 70%;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%)
 }
 
+.info-linha{
+    position: relative;
+    top: 38px;
+    right: 24%;
+    transform: translate(0, -30%);
+}
+
+.linha-v{
+    position: relative;
+    top: 85px;
+    left: 70%;
+    transform: rotate(90deg);
+    float: left;
+    
+}
+
 /*Div index page*/
 
-.cards-control{
-    position: absolute;
-    top: 70%;
-    left: 53%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    background-color: none;
+#params-container{
+    position: relative;
+    top: 250px;
+    left: 76%;
+    width: 100%;
+    transform: translate(-50%);
     padding: 0;
+}
+
+#cards-container{
+    background-color: none;
+    display: block;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 0;
+    width: 100%;
+
 }
 
 .card{
     margin-top: 20px;
-    margin-left: 15px;
-    margin-right: 35px;
-    width: 300px;
-    height: 340x;
+    margin-right: 30px;
+    width: 290px;
+    height: 330x;
     border-radius: 20%;
     display: inline-block;
     text-align: center;
     background-color: rgb(19, 13, 13);
-    background-repeat: no-repeat;
-    backface-visibility: 80%;
+    padding: 0;
 
 }
 
 .card a {
-    font-family: 'Italianno', cursive;
-    font-size: 30px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
 
 }
 
+.card p{
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-family: 'Italianno', cursive;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
 .card img{
-    transform: translate3d(-4px, 7px, 6px);
+    transform: translate3d(0px, 7px, 6px);
     justify-content: center;
-    width: 240px;
+    width: 90%;
     height: 220px;
     border-radius: 20%;
 
@@ -134,6 +163,10 @@ footer:hover{
     color: #F2A340;
 }
 
+.card p:hover{
+    color: #F2A340;
+}
+
 /*Divs Info Page*/
 
 #title-container{
@@ -143,11 +176,27 @@ footer:hover{
     flex-wrap: wrap;
     justify-content: center;
     vertical-align: middle;
+    position: relative;
+    top: 60px;
+    right: 15%;
    
 }
 
 #title-container h1{
-    font-size: 60px;
+    font-size: 55px;
     color: black;
     font-family: 'Akronim', cursive;
+}
+
+.info-text{
+    position: relative;
+    top: 30px;
+    left: 10%;
+    font-size: 20px;
+    color: rgb(92, 92, 92);
+
+}
+
+.info-text p{
+    font-family: 'Inconsolata', monospace;
 }
